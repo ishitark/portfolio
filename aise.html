@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Image</title>
+  <style>
+    /* Body style */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #121212;
+      overflow: hidden; /* Prevent scrolling */
+    }
+
+    /* Full image style */
+    .full-image {
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain; /* Ensures full image fits within the screen while maintaining aspect ratio */
+      box-shadow: 0 0 50px rgba(0, 255, 255, 1);
+    }
+
+    /* Back button */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 255, 0.8);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 255, 0.6);
+      z-index: 10; /* Ensure button appears on top of the image */
+    }
+
+    .back-button:hover {
+      background-color: rgba(0, 0, 255, 1);
+    }
+  </style>
+</head>
+<body>
+  <a href="index2.html" class="back-button">Go Back</a>
+  <img src="rkimg.jpeg" alt="Full Futuristic Image" class="full-image">
+</body>
+</html>
